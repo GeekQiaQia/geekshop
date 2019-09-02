@@ -51,6 +51,15 @@ module.exports = {
     notify_url: '' // 微信异步通知，例：https://www.nideshop.com/api/pay/notify
   }
 };
+
+* 快递物流信息查询使用的是快递鸟接口
+
+express: {
+     // 快递物流信息查询使用的是快递鸟接口，申请地址：http://www.kdniao.com/
+     appid: '', // 对应快递鸟用户后台 用户ID
+     appkey: '', // 对应快递鸟用户后台 API key
+     request_url: 'http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx'
+   }
 ```
 
 + 安装依赖并启动
